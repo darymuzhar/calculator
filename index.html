@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator | Dary Muzhar M</title>
+  </head>
+
+  <body>
+    <caption>
+      Kalkulator
+    </caption>
+    <div>
+      <input type="number" id="angka1" />
+      <select id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">x</option>
+        <option value="/">/</option>
+      </select>
+      <input type="number" id="angka2" />
+      <span>=</span>
+      <span id="hasil"></span>
+      <button id="submit">Kirim</button>
+    </div>
+
+    <script>
+      const angka1 = document.getElementById("angka1");
+      const angka2 = document.getElementById("angka2");
+      const operator = document.getElementById("operator");
+      const hasil = document.getElementById("hasil");
+
+      submit.addEventListener("click", function () {
+        console.log("Hasil: " + eval(angka1.value + operator.value + angka2.value));
+        alert(eval(angka1.value + operator.value + angka2.value));
+      });
+    </script>
+  </body>
+</html>
